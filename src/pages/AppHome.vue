@@ -1,11 +1,20 @@
 <script>
 import AppHeader from '../components/AppHeader.vue';
+import AppCompetition from './AppCompetition.vue';
+import AppIstruttori from './AppIstruttori.vue';
+import AppSchedule from './AppSchedule.vue';
+import AppSedi from './AppSedi.vue';
 
 export default {
   name: 'AppHome',
 
   components: {
-    AppHeader
+    AppHeader,
+    AppSchedule,
+    AppIstruttori,
+    AppCompetition,
+    AppSedi
+
   }
 }
 </script>
@@ -16,18 +25,32 @@ export default {
       <!--link header su img principale-->
         <AppHeader class="header"></AppHeader>
   
-        <div>
+        <!--HERO Principale-->
+        <section>
             <div class="hero-img">
                 <img class="" src="../assets/images/mica.jpg" alt="MicaGalvao">
             </div>
         
-          
           <div class="ms-intro">
             <h1>Benvenuti nella wcra</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam provident, et voluptates est harum in inventore ut officia? In, unde minima! Culpa consequuntur atque inventore consectetur quo maxime sunt dolores.</p>
           </div>
-        
-        </div>
+          
+          <div class="text-center"><h1>STORIAAAAAAA</h1></div>
+
+        </section>
+
+        <!--Corsi e orari-->
+        <AppSchedule></AppSchedule>
+
+        <!--Schede Istruttori-->
+        <AppIstruttori></AppIstruttori>
+
+        <!--Competizioni UIJJ e altre-->
+        <AppCompetition></AppCompetition>
+
+        <!--Mappa delle sedi-->
+        <AppSedi></AppSedi>
          
     </div>
 

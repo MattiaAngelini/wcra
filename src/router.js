@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import AppHome from './pages/AppHome.vue';
-
+import AppSchedule from './pages/AppSchedule.vue';
+import AppIstruttori from './pages/AppIstruttori.vue';
+import AppCompetition from './pages/AppCompetition.vue';
+import AppSedi from './pages/AppSedi.vue';
 
 const router = createRouter({	
     history: createWebHistory(),
@@ -10,6 +13,27 @@ const router = createRouter({
             path: '/',
             name: 'home',
             component: AppHome
+        },
+        {
+            path: '/orari-corsi',
+            name: 'schedule',
+            component: AppSchedule
+        },
+
+        {
+            path: '/istruttori',
+            name: 'istruttori',
+            component: AppIstruttori
+        },
+        {
+            path: '/competition',
+            name: 'competition',
+            component: AppCompetition
+        },
+        {
+            path: '/sedi',
+            name: 'sedi',
+            component: AppSedi
         }
     ]
 });

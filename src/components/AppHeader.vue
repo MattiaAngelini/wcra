@@ -7,11 +7,11 @@ export default {
 <template>
   
   <section class="d-flex gap-5">
-    <a href="">HOME</a>
-    <a href="">CORSI E ORARI</a>
-    <a href="">ISTRUTTORI</a>
-    <a href="">COMPETITION</a>
-    <a href="">SEDI</a>
+    <router-link :to="{ name: 'home' }">HOME</router-link>
+    <router-link :to="{ name: 'schedule' }">CORSI E ORARI</router-link>  
+    <router-link :to="{ name: 'istruttori' }">ISTRUTTORI</router-link>
+    <router-link :to="{ name: 'competition' }">COMPETITION</router-link>
+    <router-link :to="{ name: 'sedi' }">SEDI</router-link>
   </section>
 
 </template>
