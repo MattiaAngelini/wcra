@@ -1,5 +1,6 @@
 <script>
 import AppHeader from '../components/AppHeader.vue';
+import Slider from '../components/Slider.vue';
 import AppCompetition from './AppCompetition.vue';
 import AppIstruttori from './AppIstruttori.vue';
 import AppSchedule from './AppSchedule.vue';
@@ -13,7 +14,8 @@ export default {
     AppSchedule,
     AppIstruttori,
     AppCompetition,
-    AppSedi
+    AppSedi,
+    Slider
 
   }
 }
@@ -37,6 +39,15 @@ export default {
           </div>
           
           <div class="text-center"><h1>STORIAAAAAAA</h1></div>
+
+          <Slider></Slider>
+
+          <!--
+          BREVE STORIA E CAROSELLO DI IMMAGINI
+
+          
+        
+          -->
 
         </section>
 
