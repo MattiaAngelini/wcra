@@ -2,8 +2,6 @@
 
 export default {
   name: 'AppIstruttori',
-
-  
 }
 </script>
 

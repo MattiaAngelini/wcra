@@ -14,49 +14,49 @@ export default {
       <router-link :to="{ name: 'istruttori' }"><b>ISTRUTTORI</b></router-link>
       <router-link :to="{ name: 'competition' }"><b>COMPETITION</b></router-link>
       <router-link :to="{ name: 'sedi' }"><b>SEDI</b></router-link>
+     
     </div>
 
-    <i class="fa-solid fa-bars d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
+    <i class="fa-solid fa-bars d-block d-md-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
 
+
+    <!--Hamburger Smartphone-->
     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
         <div>
-          <img class="logo" src="../assets/images/wcra-logo.png" alt="">
+          <h3><b>W.C.R.A.</b></h3>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       
       <div class="offcanvas-body " data-bs-dismiss="offcanvas">
-      <div>
-      <div class="">
-        <div>
-          <router-link :to="{ name: 'home' }"><b>HOME</b></router-link>
-        </div>
-        <div>
-          <router-link :to="{ name: 'schedule' }"><b>CORSI E ORARI</b></router-link>  
-
-        </div>
-
-        <div>
-          <router-link :to="{ name: 'istruttori' }"><b>ISTRUTTORI</b></router-link>
-
-        </div>
-
-        <div>
-          <router-link :to="{ name: 'competition' }"><b>COMPETITION</b></router-link>
-
-        </div>
-        
-       <div>
-        <router-link :to="{ name: 'sedi' }"><b>SEDI</b></router-link>
-       </div>
-        
        
-      </div>
-        <div>
+          <div class="d-flex flex-column gap-4">
+            <div>
+              <router-link :to="{ name: 'home' }"><b>Home</b></router-link>
+            </div>
+            <div>
+              <router-link :to="{ name: 'schedule' }"><b>Corsi e orari</b></router-link>  
+
+            </div>
+
+            <div>
+              <router-link :to="{ name: 'istruttori' }"><b>Istruttori</b></router-link>
+
+            </div>
+
+            <div>
+              <router-link :to="{ name: 'competition' }"><b>Competizioni</b></router-link>
+
+            </div>
+            
+          <div>
+            <router-link :to="{ name: 'sedi' }"><b>Dove trovarci</b></router-link>
+          </div>
+            
           
-        </div>
-      </div>
+          </div>
+    
       </div>
     </div>
 
@@ -76,7 +76,6 @@ a{
     border: 2px solid white;
     border-radius: 8px;
     padding: 10px;
-    margin: 10px;
     color: white;
     text-decoration: none;
   }
@@ -86,8 +85,7 @@ a{
   }
 
 .offcanvas{
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
-  border: none;
+ width: 50%;
 }
 
 .btn-close{
