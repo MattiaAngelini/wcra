@@ -28,26 +28,36 @@ export default {
         <AppHeader class="header"></AppHeader>
   
         <!--HERO Principale-->
-        <section>
+        <section >
             <div class="hero-img">
                 <img class="" src="../assets/images/mica.jpg" alt="MicaGalvao">
             </div>
         
           <div class="ms-intro">
             <h1>Benvenuti nella wcra</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam provident, et voluptates est harum in inventore ut officia? In, unde minima! Culpa consequuntur atque inventore consectetur quo maxime sunt dolores.</p>
+
+            <p>Team di Brazilian Jiu-Jitsu guidato dal Maestro Paolo Girone, 
+              cintura nera terzo grado formato sotto la guida del leggendario e influente Octavio Couto.
+              Siamo il punto di riferimento per questo sport nel Sud Italia con sedi a Bari, Fasano, Brindisi e Lecce.
+            </p>
           </div>
           
-          <div class="text-center"><h1>STORIAAAAAAA</h1></div>
-
-          <Slider></Slider>
-
-          <!--
-          BREVE STORIA E CAROSELLO DI IMMAGINI
-
           
-        
-          -->
+          <!--DESCRIZIONE IN HOMEPAGE-->
+          <div class="container p-4">
+            <h3>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h3>
+            <div class=" container-info d-flex justify-content-center mt-4">
+              
+              <div  class="description">   
+                
+                <div>Lorem ipsum dolor sit amet consectetur  adipisii adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime um iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime voluptatum rerum.</div>
+              </div>
+            
+              <Slider  class="slider"></Slider>
+           
+            </div>
+            
+          </div>
 
         </section>
 
@@ -75,12 +85,23 @@ export default {
   height: 100vh;
   z-index: 100;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50% 20%;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+    &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    z-index: 150; 
+  }
+
 }
 
 .header{
@@ -92,14 +113,29 @@ export default {
 }
 
 .ms-intro {
-    color: white;
-    width: 40%;  
-    padding: 1%;
-    position: absolute;
-    bottom: 30%;
-    right: 0;
-    z-index: 201;
-
+  color: white;
+  width: 50%;  
+  padding: 1%;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  z-index: 201;
 }
+
+
+.container-info{
+ 
+    .description{
+      width: 50%;
+    }
+
+    .slider{
+      width: 50%;
+    }
+}
+
+
+
+
 
 </style>

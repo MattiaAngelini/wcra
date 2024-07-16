@@ -100,24 +100,53 @@ export default {
 
 <template>
 
-    <div class="container p-2"> 
-      <div class="fade-in delay- d-flex gap-1 justify-content-between align-items-center">
+    <div class=""> 
 
-        <button @click="prevCarousel()"><-</button>
-        <!--Carosello-->
-        <img :class="{'fade-in': animate, 'delay-1': animate}" :src="carousel[activeCarousel].image1" alt="">
-        <img :class="{'fade-in': animate, 'delay-2': animate}" :src="carousel[activeCarousel].image2" alt="">
-        <img :class="{'fade-in': animate, 'delay-3': animate}" :src="carousel[activeCarousel].image3" alt="">
+      <div class="ms-container fade-in delay-">
 
-        <button @click="nextCarousel()"> -> </button>
+        <div class="text-center">
+          <i @click="prevCarousel()" class="fa-solid fa-caret-up"></i>
+        </div>
 
+        <!--Carosello immagini-->
+        <div>
+            <div class="d-flex justify-content-center p-3">
+               <img class="img-fluid"  :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt="">
+            </div>
+            <div class="d-flex justify-content-center p-3">
+              <img  :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt="">
+            </div>
+            <div class="d-flex justify-content-center p-3">
+              <img  :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt="">
+            </div>
+        </div>
+   
+      <div class="text-center">
+        <i @click="nextCarousel()" class="fa-solid fa-caret-down"></i>
+      </div>
+      
       </div>
     </div>
  
 </template>
 
 <style scoped lang="scss">
-img { width: 400px;}
+
+.ms-container{
+
+    img { 
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 6px 7px rgba(0, 0, 0, 1);
+    
+  }
+
+  i{
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 6px;
+  }
+}
 
 
   // ANIMATION SLIDER
@@ -140,6 +169,22 @@ img { width: 400px;}
 @for $i from 0 through 20 {
   .delay-#{$i} {
     animation-delay: #{$i * 0.1}s;
+  }
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+    img {
+      width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+  .ms-container {
+    img {
+      width: 60%;
+   
+    }
   }
 }
 
