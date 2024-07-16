@@ -6,4 +6,5 @@
 </template>
 
 <style lang="scss">
+@use './src/assets/styles/generic.scss' as *;
 </style>

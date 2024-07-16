@@ -8,94 +8,72 @@ export default {
 
 <template>
 
-<div class="wrap">
+<div class="wrap d-flex justify-content-center align-items-center flex-wrap">
 
-  <div class="container">
-    <h1>CORSI E ORARi</h1>
+  <div class="container calendar p-3 m-3">
+    
+    <div class="d-lg-flex justify-content-evenly p-2">
+      <div class="day-week">LUNEDI
+        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
+        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
+        <div>11:00 - 12:00 <span class="basic">basic</span></div>
+        <div>_________</div>
+      </div>
 
-    <section class="calendar row p-2">
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">LUNEDI</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">11:00 - 12:00</div>
-            <div class="ms-badge">intermedio</div>
-          </div>
-          <div class="ms-container-course">
-            <div class="ms-clock">19:00 - 21:00</div>
-            <div class="ms-badge">intermedio</div>
-          </div>
-        </div>
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">MARTEDI</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">13:00 - 15:00</div>
-            <div class="ms-badge">intermedio</div>
-          </div>
-          <div class="ms-container-course">
-            <div class="ms-clock">19:00 - 20:15</div>
-            <div class="ms-badge">Basic</div>
-          </div>
-        </div>
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">MERCOLEDI</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">11:00 - 12:00</div>
-            <div class="ms-badge">No-Gi</div>
-          </div>
-          <div class="ms-container-course">
-            <div class="ms-clock">19:00 - 21:00</div>
-            <div class="ms-badge">No-Gi</div>
-          </div>
-        </div>
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">GIOVEDI</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">13:00 - 15:00</div>
-            <div class="ms-badge">intermedio</div>
-          </div>
-          <div class="ms-container-course">
-            <div class="ms-clock">19:00 - 20:15</div>
-            <div class="ms-badge">Basic</div>
-          </div>
-        </div>
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">VENERDI</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">11:00 - 12:00</div>
-            <div class="ms-badge">intermedio</div>
-          </div>
-          <div class="ms-container-course">
-            <div class="ms-clock">19:00 - 21:00</div>
-            <div class="ms-badge">intermedio</div>
-          </div>
-        </div>
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">SABATO</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">15:00 - 17:00</div>
-            <div class="ms-badge">OPEN-MAT</div>
-          </div>
-        </div>
-        <div class="col-lg col-md-3 col-12 mb-3">
-          <h5 class="text-center">DOMENICA</h5>
-          <div class="ms-container-course">
-            <div class="ms-clock">CHIUSO</div>
-          </div>
-        </div>
-      </section>
+      <div class="day-week p-2">MARTEDI
+        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
+        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
+        <div>11:00 - 12:00 <span class="basic">basic</span></div>
+        <div>_________</div>
+      </div> 
+    </div>
 
-  
+    <div class="d-lg-flex justify-content-evenly">
+      <div class="day-week p-2">MERCOLEDI
+        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
+        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
+        <div>11:00 - 12:00 <span class="basic">basic</span></div>
+        <div>_________</div>
+      </div>
+      <div class="day-week p-2">GIOVEDI
+        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
+        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
+        <div>11:00 - 12:00 <span class="basic">basic</span></div>
+        <div>_________</div>
+      </div> 
+    </div>
+
+    <div class="d-lg-flex justify-content-evenly ">
+      <div class="day-week p-2">VENERDI   
+        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
+        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
+        <div>11:00 - 12:00 <span class="basic">basic</span></div>
+        <div>_________</div>
+        
+
+      </div>
+
+      <div class="weekend p-2">SABATO
+        <div>Open-Mat</div>
+        <div class="mb-2">_________</div>
+      
+        
+        <div class="weekend ">DOMENICA</div>
+        <div>CHIUSO</div>
+      </div> 
+
+    </div>
+      
+    
+
+    
 
    
 
   </div>
-
-  
-
 </div>
-  
- 
 
+  
 </template>
 
 <style scoped lang="scss">
@@ -104,23 +82,52 @@ h1{color: white;}
 
 .wrap {
   background-image: url('/src/assets/images/cover-orari.jpg');
-  height: 100vh;
+  min-height: 100vh;
 }
-
 
 .calendar {
   background-color: black;
   opacity: 0.85;
   border-radius: 20px;
   color: white;
-  min-height: 50vh;
-  
-    .ms-container-course{
-      width: 100%;
-      border: 3px solid white;
-      border-radius: 10px;
-      padding: 6px;
+  width: 70%;
+  min-height: 80%;
+
+    .day-week, .weekend {
+    min-height: 20%;
+    font-weight: 800;
+    min-width: 60%;
+    margin: auto;
     }
+
+    .day-week div:nth-child(1),
+    .day-week div:nth-child(2),
+    .day-week div:nth-child(3) {
+        font-weight: 800;
+        padding: 6px 0 6px 0;
+        
+        
+    }
+
+    .basic, .intermedio, .femminile{
+      margin-left: 10px;
+      border: 1px solid white;
+    }
+
+    .basic{
+      color: green;
+    }
+
+    .intermedio {
+      color: orange;
+
+    }
+    
+    .femminile {
+      color: purple;
+
+    }
+
 }
 
 
