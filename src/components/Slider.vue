@@ -109,14 +109,14 @@ export default {
         </div>
 
         <!--Carosello immagini-->
-        <div>
-            <div class="d-flex justify-content-center p-3">
+        <div class="p-1">
+            <div class="d-flex justify-content-center mb-3">
                <img class="img-fluid"  :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt="">
             </div>
-            <div class="d-flex justify-content-center p-3">
+            <div class="d-flex justify-content-center mb-3">
               <img  :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt="">
             </div>
-            <div class="d-flex justify-content-center p-3">
+            <div class="d-flex justify-content-center mb-3">
               <img  :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt="">
             </div>
         </div>
@@ -144,7 +144,7 @@ export default {
   i{
     font-size: 1.4rem;
     cursor: pointer;
-    padding: 6px;
+   
   }
 }
 
@@ -173,19 +173,61 @@ export default {
 }
 
 // MEDIA QUERIES
-@media (min-width: 768px) {
-    img {
-      width: 30%;
+
+// Very small devices (e.g., smartphones with screens smaller than 340px)
+@media (max-width: 340px) {
+    .ms-container {
+        img {
+            width: 100%;
+        }
+      
     }
 }
 
-@media (min-width: 992px) {
-  .ms-container {
-    img {
-      width: 60%;
-   
+// Smartphone
+@media (min-width: 341px) and (max-width: 576px) {
+    .ms-container {
+      padding: 10px;
+        img {
+            width: 90%;
+        }
     }
-  }
+}
+
+// Tablet
+@media (min-width: 577px) and (max-width: 768px) {
+    .ms-container {
+        img {
+            width: 65%;
+        }
+    }
+}
+
+// Small laptop
+@media (min-width: 769px) and (max-width: 992px) {
+    .ms-container {
+        img {
+            width: 60%;
+        }
+    }
+}
+
+// Large laptop and desktop
+@media (min-width: 993px) and (max-width: 1200px) {
+    .ms-container {
+        img {
+            width: 50%;
+        }
+    }
+}
+
+// Extra large screens
+@media (min-width: 1201px) {
+    .ms-container {
+        img {
+            width: 50%;
+        }
+    }
 }
 
 </style>

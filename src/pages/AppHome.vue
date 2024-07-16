@@ -40,17 +40,27 @@ export default {
               cintura nera terzo grado formato sotto la guida del leggendario e influente Octavio Couto.
               Siamo il punto di riferimento per questo sport nel Sud Italia con sedi a Bari, Fasano, Brindisi e Lecce.
             </p>
+
+           
           </div>
           
           
           <!--DESCRIZIONE IN HOMEPAGE-->
-          <div class="container p-4">
-            <h3>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h3>
-            <div class=" container-info d-flex justify-content-center mt-4">
+          <div class="container p-2 mt-5 mb-5">
+            
+            <div class=" container-info d-flex justify-content-center">
               
-              <div  class="description">   
+              <div  class="description text-center mt-5"> 
+                <h3>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h3>  
                 
-                <div>Lorem ipsum dolor sit amet consectetur  adipisii adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime um iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime voluptatum rerum.</div>
+                       
+                    <div> praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime voluptatum rerum.</div>
+                    <div class="d-flex justify-content-center">
+                      <img class="mestre mt-5 d-none d-md-none d-lg-block" src="../assets/images/mica.jpg" alt="">
+                    </div>
+                    
+         
+
               </div>
             
               <Slider  class="slider"></Slider>
@@ -79,6 +89,14 @@ export default {
 
 <style scoped lang="scss">
 
+
+.header{
+  position: absolute;
+  z-index: 800;
+  padding: 1%;
+}
+
+
 .hero-img {
   position: relative;
   width: 100%;
@@ -104,14 +122,6 @@ export default {
 
 }
 
-.header{
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 200;
-  padding: 1%;
-}
-
 .ms-intro {
   color: white;
   width: 50%;  
@@ -133,6 +143,59 @@ export default {
       width: 50%;
     }
 }
+
+.mestre{
+  width:200px;
+  height: 400px;
+}
+
+
+// MEDIA QUERIES
+
+// Very small devices (e.g., smartphones with screens smaller than 340px)
+@media (max-width: 320px) {
+  .description{
+    font-size: 10px;
+  }
+
+}
+
+// Smartphone
+@media (min-width: 321px) and (max-width: 420px) {
+  .description{
+    font-size: 12px;
+  }
+
+ 
+}
+
+// Tablet
+@media (min-width: 421px) and (max-width: 768px) {
+  .description{
+    font-size: 16px;
+  }
+  
+}
+
+// Small laptop
+@media (min-width: 769px) and (max-width: 992px) {
+  .description{
+    font-size: 22px;
+  }
+
+   
+}
+
+// Large laptop and desktop
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+// Extra large screens
+@media (min-width: 1201px) {
+ 
+}
+
 
 
 
