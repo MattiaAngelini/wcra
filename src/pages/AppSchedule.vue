@@ -5,80 +5,80 @@ export default {
 
 }
 </script>
-
 <template>
 
-<div class="wrap d-flex justify-content-center align-items-center flex-wrap">
+  <section class="wrap p-5 ">
+    <div class="container">
+      <div class="row">
 
-  <div class="container calendar p-3 m-3">
-    
-    <div class="d-lg-flex justify-content-evenly p-2">
-      <div class="day-week">LUNEDI
-        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
-        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
-        <div>11:00 - 12:00 <span class="basic">basic</span></div>
-        <div>_________</div>
-      </div>
+        <!-- Descrizione corsi -->
+        <div class="col-lg-5 ">
+          <h1>I nostri corsi sono suddivisi </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad facilis quis illo error assumenda earum cumque asperiores debitis vel quas, odio soluta explicabo iste, ipsam in iusto officiis labore.</p>
+        </div>
 
-      <div class="day-week p-2">MARTEDI
-        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
-        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
-        <div>11:00 - 12:00 <span class="basic">basic</span></div>
-        <div>_________</div>
-      </div> 
-    </div>
-
-    <div class="d-lg-flex justify-content-evenly">
-      <div class="day-week p-2">MERCOLEDI
-        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
-        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
-        <div>11:00 - 12:00 <span class="basic">basic</span></div>
-        <div>_________</div>
-      </div>
-      <div class="day-week p-2">GIOVEDI
-        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
-        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
-        <div>11:00 - 12:00 <span class="basic">basic</span></div>
-        <div>_________</div>
-      </div> 
-    </div>
-
-    <div class="d-lg-flex justify-content-evenly ">
-      <div class="day-week p-2">VENERDI   
-        <div>11:00 - 12:00 <span class="intermedio">intermedio</span></div>
-        <div>11:00 - 12:00 <span class="femminile">femminile</span></div>
-        <div>11:00 - 12:00 <span class="basic">basic</span></div>
-        <div>_________</div>
-        
-
-      </div>
-
-      <div class="weekend p-2">SABATO
-        <div>Open-Mat</div>
-        <div class="mb-2">_________</div>
-      
-        
-        <div class="weekend ">DOMENICA</div>
-        <div>CHIUSO</div>
-      </div> 
-
-    </div>
-      
-    
-
-    
-
-   
-
-  </div>
-</div>
-
+        <!--Sched orari-->
+        <div class="calendar p-5 d-flex justify-content-center offset-lg-1 col-lg-6 text-center">
+          <div>
+            <div class="day-week">
+              <b><h3>LUNEDI</h3></b>
+              <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+              <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+              <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+            </div>
   
-</template>
+            <div class="day-week mt-3">
+              <b><h3>MARTEDI'</h3></b>
+              <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+              <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+              <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+            </div> 
+  
+            <div class="day-week mt-3">
+              <b><h3>MERCOLEDI'</h3></b>
+              <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+              <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+              <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+            </div>
+  
+            <div class="day-week mt-3">
+              <b><h3>GIOVEDI'</h3></b>
+              <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+              <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+              <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+            </div>
+  
+            <div class="day-week mt-3">
+              <b><h3>VENERDI'</h3></b>
+              <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+              <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+              <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+            </div> 
+  
+            <div class="weekend mt-3">
+              <b><h3>SABATO</h3></b>
+              <div>15:00 - 17:00 <span class="basic">Open Mat</span></div>
+            </div>
+  
+            <div class="weekend mt-3">
+              <b><h3>DOMENICA</h3></b>
+              <div>CHIUSO</div>
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>
+    </div>
+  </section>
+  
+  </template>
+  
 
 <style scoped lang="scss">
 
-h1{color: white;}
+h1,p{color: white;}
+h3{font-weight: 700;}
 
 .wrap {
   background-image: url('/src/assets/images/cover-orari.jpg');
@@ -90,43 +90,67 @@ h1{color: white;}
   opacity: 0.85;
   border-radius: 20px;
   color: white;
-  width: 70%;
   min-height: 80%;
 
-    .day-week, .weekend {
-    min-height: 20%;
+    .day-week, .weekend{
+    min-height: 10%;
     font-weight: 800;
     min-width: 60%;
     margin: auto;
+    line-height: 40px;
     }
-
-    .day-week div:nth-child(1),
-    .day-week div:nth-child(2),
-    .day-week div:nth-child(3) {
-        font-weight: 800;
-        padding: 6px 0 6px 0;
-        
-        
-    }
+     
+  .day-week div.weekend div:first-child {
+    font-weight: 800;
+  }
+  .day-week div, .weekend div:first-child {
+    text-align: left;
+    font-weight: 800;
+}
 
     .basic, .intermedio, .femminile{
-      margin-left: 10px;
-      border: 1px solid white;
+      
+      border-radius: 4px;
+      padding: 3px;
+      text-align: center;
+      
     }
 
     .basic{
-      color: green;
+      background-color: green;
     }
 
     .intermedio {
-      color: orange;
+      background-color: rgb(35, 22, 78)
 
     }
     
     .femminile {
-      color: purple;
+      background-color: rgb(79, 30, 79)
 
     }
+
+}
+
+// MEDIA QUERIES
+// Very small devices (e.g., smartphones with screens smaller than 340px)
+@media (min-width: 200px) and (max-width: 320px) {
+
+  *{font-size: 10px;}
+ 
+}
+
+// Smartphone
+@media (min-width: 321px) and (max-width: 400px) {
+ 
+ 
+}
+
+// Very small devices (e.g., smartphones with screens smaller than 340px)
+@media (max-width: 768px) {
+
+  span {display: block;}
+
 
 }
 
