@@ -11,7 +11,9 @@ export default {
       
       <!--LOGHI SOCIAL-->
       <div class="d-md-flex d-none gap-3">
-        <i>X</i><i>X</i><i>X</i><i>X</i><i>X</i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
       </div>
        
       <!--LINK HEADER-->
@@ -75,6 +77,7 @@ export default {
 header {
   height: 10vh;
   background-color: grey;
+  font-size: 18px;
 
   .link-header {
     height: 100%;

@@ -1,51 +1,35 @@
 <script>
 import AnimatedSection from '../components/AnimatedSection.vue';
-import AppFooter from '../components/AppFooter.vue';
-import AppHeader from '../components/AppHeader.vue';
 import Slider from '../components/Slider.vue';
 import AppChiSiamo from './AppChiSiamo.vue';
 import AppIstruttori from './AppIstruttori.vue';
 import AppSchedule from './AppSchedule.vue';
 import AppSedi from './AppSedi.vue';
-
+import HeroImage from '../components/HeroImage.vue';
 
 export default {
   name: 'AppHome',
 
   components: {
     AnimatedSection,
-    AppHeader,
     AppSchedule,
     AppIstruttori,
     AppSedi,
     Slider,
-    AppFooter,
     AppChiSiamo,
+    HeroImage
   }
 }
 </script>
 
 <template>
-  
+
   <main>
-
-     <!--HERO Principale-->
-    <section>
-      <AppHeader class="header"></AppHeader> 
-        <div class="hero-img">
-
-          <div class="ms-intro">
-            <h1>Benvenuti nella wcra</h1>
-            <p>Team di Brazilian Jiu-Jitsu guidato dal Maestro Paolo Girone, 
-              cintura nera terzo grado formato sotto la guida del leggendario e influente Octavio Couto
-            </p>
-          </div>
-        </div>
-    </section>
-
-
+    <AnimatedSection>
+      <HeroImage></HeroImage>
+    </AnimatedSection>
+   
     <!--Presentazione video-->
-
     <AnimatedSection>
      <AppChiSiamo></AppChiSiamo>
     </AnimatedSection>
@@ -66,17 +50,10 @@ export default {
     </AnimatedSection>
 
   </main>
-       
-        
-        <AnimatedSection>
-          <AppFooter></AppFooter>
-        </AnimatedSection>
-        
+
 </template>
 
 <style scoped lang="scss">
-
-
 
 video{
   border-radius: 10px;
@@ -85,24 +62,6 @@ video{
 .logo-header{
   right:0;
   width: 80px;
-}
-
-.hero-img {
-  height: 100vh;
-  background-image: url('../assets/images/mica.jpg');
-  background-size: cover;
-  background-position:center;
-  box-shadow: inset 0 50px 300px rgba(0, 0, 0, 1);
-  
-}
-
-.ms-intro {
-  color: white;
-  width: 50%;  
-  position: absolute;
-  bottom: 20%;
-  right: 0;
-  z-index: 201;
 }
 
 

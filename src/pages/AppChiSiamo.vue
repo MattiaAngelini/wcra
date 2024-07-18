@@ -2,39 +2,33 @@
 
 export default {
   name: 'AppChiSiamo',
+
 }
 </script>
 
 <template>
 
-              
-          <!--DESCRIZIONE IN HOMEPAGE-->
-          <div class="container p-2 mt-5 mb-5 d-lg-flex gap-4">
-           
        
-              
+            <!--DESCRIZIONE IN HOMEPAGE-->
+          <div class="container p-2 mt-5 mb-5 d-lg-flex gap-4">
+            
               <div  class="description text-center mt-5 p-3"> 
                 <h3>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h3>  
                 <div> COMPETIZIONI, UIJJ, IBJJF ECC E FOTO COMPETIZIONI praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime voluptatum rerum.</div>         
               
                 <img class="img-fluid" src="../assets/images/lotta.png" alt="">
-            </div>
-
-
+             </div>
+            
               <div class="video-wrapper">
                   <video class=" background-video" controls>
                   <div class="prova">ciao ciao</div>
                   <source src="../assets/images/video.mp4" type="video/mp4">
                     Il tuo browser non supporta il tag video.
                 </video>
-
               </div>
-           
-         
 
-            
-             
           </div>
+
 </template>
 
 <style scoped lang="scss">
