@@ -6,4 +6,5 @@ import App from './App.vue'
 //Router.js
 import { router } from './router';
 
+
 createApp(App).use(router).mount('#app');

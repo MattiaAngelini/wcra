@@ -6,82 +6,83 @@ export default {
 </script>
 
 <template>
+  <div>
+    <h1 class="text-center mt-5 p-3">I NOSTRI ISTRUTTORI</h1>
+      <section class="istruttori container d-flex justify-content-center flex-wrap gap-3">
+      
+      
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
 
-    <h1 class="text-center mt-4 p-3">I NOSTRI ISTRUTTORI</h1>
-    <section class="istruttori container d-flex justify-content-center flex-wrap gap-3">
-     
+        </div>
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
+
+        </div>
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
+
+        </div>
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
+
+        </div>
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
+
+        </div>
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
+
+        </div>
+        <div class="ms-card">
+          <img src="../assets/images/mica.jpg" alt="">
+          <div class="p-3">
+            <div>Nome</div>
+            <div>Cintura</div>
+            <div>Corso</div>
+            <button class="btn btn-success"> PALMARES</button>
+          </div>
+        </div>
+      </section>
+  </div>
     
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-      <div class="ms-card">
-        <img src="../assets/images/mica.jpg" alt="">
-        <div class="p-3">
-          <div>Nome</div>
-          <div>Cintura</div>
-          <div>Corso</div>
-          <button class="btn btn-success"> PALMARES</button>
-        </div>
-
-      </div>
-    </section>
  
 </template>
 
@@ -95,8 +96,7 @@ export default {
       border-top: none;
       border-radius: 10px;
       background-color: rgb(184, 176, 176);
-      box-shadow: 3px 6px 7px rgba(0, 0, 0, 1);
-      
+      box-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
       
       img {
          max-width: 300px;

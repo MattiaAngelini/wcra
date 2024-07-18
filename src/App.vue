@@ -1,10 +1,44 @@
 <script>
+import AnimatedSection from './components/AnimatedSection.vue';
+export default {
+
+  components: {
+    AnimatedSection,
+  }
+}
 </script>
 
 <template>
-  <router-view></router-view>
+  <AnimatedSection>
+    <router-view class="fade-in delay"></router-view>
+  </AnimatedSection>
 </template>
 
 <style lang="scss">
 @use './src/assets/styles/generic.scss' as *;
+
+
+  // ANIMATION SLIDER
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@for $i from 0 through 20 {
+  .delay-#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
+}
+
 </style>

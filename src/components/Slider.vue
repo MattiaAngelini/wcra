@@ -102,29 +102,28 @@ export default {
 
     <div class=""> 
 
-      <div class="ms-container fade-in delay-">
-
-        <div class="text-center">
-          <i @click="prevCarousel()" class="fa-solid fa-caret-up"></i>
-        </div>
+      <div class="ms-container fade-in delay mt-4">
 
         <!--Carosello immagini-->
-        <div class="p-1">
-            <div class="d-flex justify-content-center mb-3">
-               <img class="img-fluid"  :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt="">
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-              <img  :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt="">
-            </div>
-            <div class="d-flex justify-content-center mb-3">
-              <img  :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt="">
-            </div>
+        <div class="p-1 d-flex">
+
+          <div class="d-flex align-items-center ">
+          <i @click="prevCarousel()" class="fa-solid fa-caret-left p-3"></i>
+          </div>
+            
+          <div class="d-flex gap-3">
+            <img class="img-fluid"  :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt="">
+            <img  :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt="">
+            <img  :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt="">
+          </div>
+
+          <div class="d-flex align-items-center">
+            <i @click="nextCarousel()" class="fa-solid fa-caret-right p-3"></i>
+          </div>
+      
         </div>
    
-      <div class="text-center">
-        <i @click="nextCarousel()" class="fa-solid fa-caret-down"></i>
-      </div>
-      
+     
       </div>
     </div>
  
@@ -135,10 +134,8 @@ export default {
 .ms-container{
 
     img { 
-    width: 100%;
     border-radius: 10px;
     box-shadow: 3px 6px 7px rgba(0, 0, 0, 1);
-    
   }
 
   i{
@@ -147,7 +144,6 @@ export default {
    
   }
 }
-
 
   // ANIMATION SLIDER
   @keyframes fadeIn {
@@ -178,7 +174,7 @@ export default {
 @media (max-width: 340px) {
     .ms-container {
         img {
-            width: 100%;
+            width: 100px;
         }
       
     }
@@ -189,7 +185,7 @@ export default {
     .ms-container {
       padding: 10px;
         img {
-            width: 90%;
+            width: 60px;
         }
     }
 }
@@ -198,7 +194,7 @@ export default {
 @media (min-width: 577px) and (max-width: 768px) {
     .ms-container {
         img {
-            width: 65%;
+            width: 160px;
         }
     }
 }
@@ -207,7 +203,7 @@ export default {
 @media (min-width: 769px) and (max-width: 992px) {
     .ms-container {
         img {
-            width: 60%;
+            width: 200px;
         }
     }
 }
@@ -216,7 +212,7 @@ export default {
 @media (min-width: 993px) and (max-width: 1200px) {
     .ms-container {
         img {
-            width: 50%;
+            width: 300px;
         }
     }
 }
@@ -225,7 +221,7 @@ export default {
 @media (min-width: 1201px) {
     .ms-container {
         img {
-            width: 50%;
+            width: 400px;
         }
     }
 }

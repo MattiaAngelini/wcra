@@ -60,7 +60,7 @@ export default {
               <div>15:00 - 17:00 <span class="basic">Open Mat</span></div>
             </div>
   
-            <div class="weekend mt-3">
+            <div class="weekend mt-3 mb-5">
               <b><h3>DOMENICA</h3></b>
               <div>CHIUSO</div>
             </div>
@@ -96,7 +96,6 @@ h3{font-weight: 700;}
     min-height: 10%;
     font-weight: 800;
     min-width: 60%;
-    margin: auto;
     line-height: 40px;
     }
      

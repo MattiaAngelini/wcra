@@ -1,84 +1,86 @@
 <script>
+import AnimatedSection from '../components/AnimatedSection.vue';
+import AppFooter from '../components/AppFooter.vue';
 import AppHeader from '../components/AppHeader.vue';
 import Slider from '../components/Slider.vue';
-import AppCompetition from './AppCompetition.vue';
+import AppChiSiamo from './AppChiSiamo.vue';
 import AppIstruttori from './AppIstruttori.vue';
 import AppSchedule from './AppSchedule.vue';
 import AppSedi from './AppSedi.vue';
+
 
 export default {
   name: 'AppHome',
 
   components: {
+    AnimatedSection,
     AppHeader,
     AppSchedule,
     AppIstruttori,
-    AppCompetition,
     AppSedi,
-    Slider
+    Slider,
+    AppFooter,
+    AppChiSiamo,
   }
 }
 </script>
 
 <template>
-    <div>
-      
-        <!--HERO Principale-->
-        <section >
+  
+  <main>
 
-          <div class="hero-img">
-            <div class="d-flex justify-content-between align-items-center ms-3">
-              <AppHeader class="header"></AppHeader>
-              <img class="logo-header rounded-circle m-3" src="../assets/images/wcra-logo.png" alt="">
-            </div>
-           <div class="ms-intro">
-              <h1>Benvenuti nella wcra</h1>
-              <p>Team di Brazilian Jiu-Jitsu guidato dal Maestro Paolo Girone, 
-                cintura nera terzo grado formato sotto la guida del leggendario e influente Octavio Couto.
-                
-              </p>
-            </div>
+     <!--HERO Principale-->
+    <section>
+      <AppHeader class="header"></AppHeader> 
+        <div class="hero-img">
+
+          <div class="ms-intro">
+            <h1>Benvenuti nella wcra</h1>
+            <p>Team di Brazilian Jiu-Jitsu guidato dal Maestro Paolo Girone, 
+              cintura nera terzo grado formato sotto la guida del leggendario e influente Octavio Couto
+            </p>
           </div>
-          
-          <!--DESCRIZIONE IN HOMEPAGE-->
-          <div class="container p-2 mt-5 mb-5">
-            
-            <div class="container-info d-flex justify-content-center">
-              
-              <div  class="description text-center mt-5"> 
-                <h3>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h3>  
-                    <div> praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime  adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime voluptatum rerum.</div>
-                    <div class="d-flex justify-content-center">
-                      <img class="mestre mt-5 d-none d-md-none d-lg-block" src="../assets/images/mica.jpg" alt="">
-                    </div>
-              </div>
-            
-              <Slider  class="slider"></Slider>
-           
-            </div>
-            
-          </div>
+        </div>
+    </section>
 
-        </section>
 
-        <!--Corsi e orari-->
-        <AppSchedule></AppSchedule>
+    <!--Presentazione video-->
 
-        <!--Schede Istruttori-->
-        <AppIstruttori></AppIstruttori>
+    <AnimatedSection>
+     <AppChiSiamo></AppChiSiamo>
+    </AnimatedSection>
 
-        <!--Competizioni UIJJ e altre-->
-        <AppCompetition></AppCompetition>
+    <!--Corsi e orari-->
+    <AnimatedSection>
+      <AppSchedule></AppSchedule> 
+    </AnimatedSection>
 
-        <!--Mappa delle sedi-->
-        <AppSedi></AppSedi>
-         
-    </div>
+    <!--Schede Istruttori-->
+    <AnimatedSection>
+     <AppIstruttori></AppIstruttori>
+    </AnimatedSection>
 
+    <!--Mappa delle sedi-->
+    <AnimatedSection>
+      <AppSedi></AppSedi>
+    </AnimatedSection>
+
+  </main>
+       
+        
+        <AnimatedSection>
+          <AppFooter></AppFooter>
+        </AnimatedSection>
+        
 </template>
 
 <style scoped lang="scss">
 
+
+
+video{
+  border-radius: 10px;
+}
 
 .logo-header{
   right:0;
@@ -103,24 +105,32 @@ export default {
   z-index: 201;
 }
 
-.container-info{
- 
-    .description{
-      width: 50%;
-    }
 
-    .slider{
-      width: 50%;
-    }
+ // ANIMATION SLIDER
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.mestre{
-  width:200px;
-  height: 400px;
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
+
+@for $i from 0 through 20 {
+  .delay-#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
+}
+
 
 // MEDIA QUERIES
-
 // Very small devices (e.g., smartphones with screens smaller than 340px)
 @media (min-width: 200px) and (max-width: 320px) {
   .ms-intro{
@@ -141,10 +151,8 @@ export default {
   .logo-header{
   right:0;
   width: 50px;
- 
- 
 }
- 
+
 }
 
 // Tablet
@@ -157,8 +165,6 @@ export default {
     font-size:14px
   }
 
- 
-  
 }
 
 // Small laptop
@@ -177,5 +183,6 @@ export default {
 @media (min-width: 1201px) {
  
 }
+
 
 </style>
