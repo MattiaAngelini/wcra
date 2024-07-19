@@ -8,9 +8,23 @@ export default {
   <section class="wrap p-5">
     <div class="container">
       <div class="row">
+
+
         <!-- Descrizione corsi -->
         <div class="col-lg-3">
-          <h1>I nostri corsi sono suddivisi</h1>
+
+          <div class="d-flex justify-content-center mt-2">
+            <div>
+              <div class="ms-title text-center">CORSI E ORARI</div>
+              <div class="d-flex">
+                <div class="container-belts p-2">
+                  <div class="belt1"></div>
+                  <div class="belt2"></div>
+                  <div class="belt3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad facilis quis illo error assumenda earum cumque asperiores debitis vel quas, odio soluta explicabo iste, ipsam in iusto officiis labore.</p>
         </div>
 
@@ -20,63 +34,55 @@ export default {
           <div class="row">
 
               <div class="col-12 col-md-6">
+                  <div class="day-week">
+                    <b><h3>LUNEDI</h3></b>
+                    <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+                    <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+                    <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                  </div>
 
-                <div class="day-week">
-                <b><h3>LUNEDI</h3></b>
-                <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
-                <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
-                <div>11:00 - 12:00 <span class="basic">Basic</span></div>
-              </div>
+                  <div class="day-week">
+                    <b><h3>MARTEDI'</h3></b>
+                    <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+                    <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+                    <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                  </div>
 
-              <div class="day-week">
-                <b><h3>MARTEDI'</h3></b>
-                <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
-                <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
-                <div>11:00 - 12:00 <span class="basic">Basic</span></div>
-              </div>
-
-              <div class="day-week">
-                <b><h3>MERCOLEDI'</h3></b>
-                <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
-                <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
-                <div>11:00 - 12:00 <span class="basic">Basic</span></div>
-              </div>
-
+                  <div class="day-week">
+                    <b><h3>MERCOLEDI'</h3></b>
+                    <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+                    <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+                    <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                  </div>
               </div>
             
 
               <div class="col-12 col-md-6">
+                  <div class="day-week">
+                    <b><h3>GIOVEDI'</h3></b>
+                    <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+                    <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+                    <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                  </div>
 
-                
-              <div class="day-week">
-                <b><h3>GIOVEDI'</h3></b>
-                <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
-                <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
-                <div>11:00 - 12:00 <span class="basic">Basic</span></div>
-              </div>
+                  <div class="day-week">
+                    <b><h3>VENERDI'</h3></b>
+                    <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
+                    <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
+                    <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                  </div>
 
-              <div class="day-week">
-                <b><h3>VENERDI'</h3></b>
-                <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
-                <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
-                <div>11:00 - 12:00 <span class="basic">Basic</span></div>
-              </div>
-
-              <div class="day-week">
-                <b><h3>SABATO</h3></b>
-                <div>15:00 - 17:00 <span class="basic">Open Mat</span></div>
-              </div>
-
+                  <div class="day-week">
+                    <b><h3>SABATO</h3></b>
+                    <div>15:00 - 17:00 <span class="basic">Open Mat</span></div>
+                  </div>
               </div>    
-
-
-
+              
               <div class="weekend mt-3 mb-5">
                 <b><h3>DOMENICA</h3></b>
                 <div><b>CHIUSO</b></div>
               </div>
-            
-
+          
          </div>       
         </div>
       </div>
@@ -86,9 +92,17 @@ export default {
 
 <style scoped lang="scss">
 @use './src/assets/styles/partials/mediaqueries.scss' as *;
+@use './src/assets/styles/generic.scss' as *;
 
-h1, p {
+.ms-title{
+  font-size: 26px;
   color: white;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+  font-size: 18px;
 }
 h3 {
   font-weight: 700;

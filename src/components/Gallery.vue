@@ -139,6 +139,7 @@ export default {
 @use './src/assets/styles/partials/animations.scss' as *;
 
 
+
 section {
   background-color: $secondary-color;
   border: 14px solid black;

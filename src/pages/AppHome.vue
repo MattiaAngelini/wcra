@@ -56,7 +56,7 @@ export default {
 
 <style scoped lang="scss">
 @use './src/assets/styles/partials/mediaqueries.scss' as *;
-@use './src/assets/styles/partials/animations.scss' as *;
+
 
   video {
     border-radius: 10px;
