@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="ms-container">
     <div class="d-flex justify-content-center mt-5">
       <div>
         <span class="title-section">I NOSTRI ISTRUTTORI</span>
@@ -82,6 +82,11 @@ export default {
 <style scoped lang="scss">
 @use './src/assets/styles/partials/variables.scss' as *;
 
+.ms-container{
+  background-color: $secondary-color;
+  padding: 40px 0 40px 0;
+}
+
 
 .istruttori {
   min-height: 100vh;
@@ -90,7 +95,7 @@ export default {
     border: 2px solid black;
     border-top: none;
     border-radius: 10px;
-    background-color: $secondary-color;
+    background-color: $main-color;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
     color: white;
     font-size: 20px;

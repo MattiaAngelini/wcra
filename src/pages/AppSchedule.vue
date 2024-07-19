@@ -86,6 +86,7 @@ export default {
 
 <style scoped lang="scss">
 @use './src/assets/styles/partials/mediaqueries.scss' as *;
+
 h1, p {
   color: white;
 }

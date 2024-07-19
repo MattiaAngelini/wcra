@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+
   <div class="d-flex justify-content-center mt-5">
     <div>
       <span class="title-section">CHI SIAMO</span>
@@ -37,6 +38,8 @@ export default {
 
 <style scoped lang="scss">
 @use './src/assets/styles/partials/mediaqueries.scss' as *;
+@use './src/assets/styles/generic.scss' as *;
+
 
 .video-wrapper {
   position: relative;

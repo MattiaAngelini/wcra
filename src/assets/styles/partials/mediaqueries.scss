@@ -3,14 +3,14 @@
 // Very small devices (e.g., smartphones with screens smaller than 340px)
 @media (min-width: 200px) and (max-width: 320px) {
     * {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
   
   // Smartphone
   @media (min-width: 321px) and (max-width: 400px) {
     * {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
   

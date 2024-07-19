@@ -1,4 +1,4 @@
-# W.C.R.A 
+# W.C.R.A. 
 
 ## Descrizione
 

@@ -56,37 +56,15 @@ export default {
 
 <style scoped lang="scss">
 @use './src/assets/styles/partials/mediaqueries.scss' as *;
-video {
-  border-radius: 10px;
-}
+@use './src/assets/styles/partials/animations.scss' as *;
 
-.logo-header {
-  right: 0;
-  width: 80px;
-}
-
-// ANIMATION SLIDER
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  video {
+    border-radius: 10px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .logo-header {
+    right: 0;
+    width: 80px;
   }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-}
-
-@for $i from 0 through 20 {
-  .delay-#{$i} {
-    animation-delay: #{$i * 0.1}s;
-  }
-}
-
 
 </style>

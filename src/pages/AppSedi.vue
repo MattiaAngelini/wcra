@@ -26,7 +26,7 @@ export default {
   <section class="d-flex align-items-center mt-5 mb-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <h1>Trova la sede più vicina a te</h1>
           <p>Il team WCRA è molto attivo in Puglia con diverse sedi ecc. Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Asperiores non consequatur sint! Sapiente veritatis officia ducimus, a
@@ -48,7 +48,7 @@ export default {
           </p>
         </div>
 
-        <div class="container-map col-12 offset-md-1 col-md-8">
+        <div class="container-map col-12 offset-md-1 col-md-7">
           <GoogleMap class="ms-map" />
         </div>
       </div>
@@ -59,6 +59,7 @@ export default {
 <style scoped lang="scss">
 section {
   min-height: 80vh;
+  font-size: 16px;
 
   .ms-map {
     border-radius: 20px;
