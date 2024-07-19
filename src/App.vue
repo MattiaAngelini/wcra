@@ -1,16 +1,15 @@
 <script>
 import AnimatedSection from './components/AnimatedSection.vue';
 import AppFooter from './components/AppFooter.vue';
-import AppHeader from './components/AppHeader.vue'
+import AppHeader from './components/AppHeader.vue';
 
 export default {
-
   components: {
     AnimatedSection,
     AppHeader,
-    AppFooter
-  }
-}
+    AppFooter,
+  },
+};
 </script>
 
 <template>
@@ -24,15 +23,15 @@ export default {
 <style lang="scss">
 @use './src/assets/styles/generic.scss' as *;
 
-.header{
+.header {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 999;
 }
 
-  // ANIMATION SLIDER
-  @keyframes fadeIn {
+// ANIMATION SLIDER
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -53,5 +52,4 @@ export default {
     animation-delay: #{$i * 0.1}s;
   }
 }
-
 </style>

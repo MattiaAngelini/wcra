@@ -1,22 +1,20 @@
 <script>
 export default {
   name: 'AppHeader',
-}
+};
 </script>
 
 <template>
   <header>
-
     <section class="link-header d-flex justify-content-between align-items-center">
-      
-      <!--LOGHI SOCIAL-->
+      <!-- LOGHI SOCIAL -->
       <div class="d-md-flex d-none gap-3">
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-youtube"></i>
       </div>
-       
-      <!--LINK HEADER-->
+      
+      <!-- LINK HEADER -->
       <div class="d-md-flex d-none gap-3 align-items-center justify-content-center">
         <router-link :to="{ name: 'home' }"><b>HOME</b></router-link>
         <router-link :to="{ name: 'schedule' }"><b>CORSI E ORARI</b></router-link>
@@ -24,26 +22,25 @@ export default {
         <router-link :to="{ name: 'sedi' }"><b>SEDI</b></router-link>
       </div>
       
-      <!--LOGO DESKTOP-->
+      <!-- LOGO DESKTOP -->
       <div class="logo d-none d-md-block">
         <img class="img-fluid rounded-circle" src="../assets/images/wcra-logo.png" alt="">
       </div>
 
-      <!--HAMBURGER MOBILE-->
+      <!-- HAMBURGER MOBILE -->
       <div class="hamburger-logo-container d-flex d-md-none justify-content-between align-items-center">
         <div class="hamburger">
           <i class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
         </div>
-       
-        <!--LOGO MOBILE-->
+        
+        <!-- LOGO MOBILE -->
         <div class="logo">
           <img class="img-fluid rounded-circle" src="../assets/images/wcra-logo.png" alt="">
         </div>
       </div>
-
     </section>
 
-    <!--Hamburger Smartphone-->
+    <!-- Hamburger Smartphone -->
     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
         <div>
@@ -51,34 +48,41 @@ export default {
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body " data-bs-dismiss="offcanvas">
-        <div class="d-flex flex-column gap-4">
+      <div class="offcanvas-body" data-bs-dismiss="offcanvas">
+        <div class="d-flex flex-column gap-4 offcanvas-links">
           <div>
-            <router-link :to="{ name: 'home' }"><b>Home</b></router-link>
+            <router-link :to="{ name: 'home' }"><b class="text-dark">Home</b></router-link>
           </div>
           <div>
-            <router-link :to="{ name: 'schedule' }"><b>Corsi e orari</b></router-link>
+            <router-link :to="{ name: 'schedule' }"><b class="text-dark">Corsi e orari</b></router-link>
           </div>
           <div>
-            <router-link :to="{ name: 'istruttori' }"><b>Istruttori</b></router-link>
+            <router-link :to="{ name: 'istruttori' }"><b class="text-dark">Istruttori</b></router-link>
           </div>
           <div>
-            <router-link :to="{ name: 'sedi' }"><b>Dove trovarci</b></router-link>
+            <router-link :to="{ name: 'sedi' }"><b class="text-dark">Dove trovarci</b></router-link>
           </div>
         </div>
       </div>
     </div>
-
   </header>
 </template>
 
 <style scoped lang="scss">
+@use './src/assets/styles/partials/variables.scss' as *;
 
 header {
   height: 10vh;
-  background-color: grey;
+  background-color: $main-color;
   font-size: 18px;
 
+  .offcanvas {
+    position: sticky;
+    left: 0;
+    border-radius: 10px;
+    height: 100vh;
+  }
+  
   .link-header {
     height: 100%;
     padding: 0 50px 0 50px;
@@ -110,5 +114,4 @@ header {
     width: 100%;
   }
 }
-
 </style>

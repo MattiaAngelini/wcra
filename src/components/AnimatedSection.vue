@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AnimatedSection',
+  name: 'AnimatedSection',
   data() {
     return {
       isVisible: false,
@@ -18,14 +18,13 @@ export default {
     observer.observe(this.$refs.section);
   },
 };
-
 </script>
 
 <template>
-    <section :class="{ visible: isVisible }" ref="section">
-      <slot></slot>
-    </section>
-  </template>
+  <section :class="{ visible: isVisible }" ref="section">
+    <slot></slot>
+  </section>
+</template>
 
 <style scoped>
 section {

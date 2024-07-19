@@ -1,0 +1,51 @@
+// MEDIA QUERIES
+
+// Very small devices (e.g., smartphones with screens smaller than 340px)
+@media (min-width: 200px) and (max-width: 320px) {
+    * {
+      font-size: 10px;
+    }
+  }
+  
+  // Smartphone
+  @media (min-width: 321px) and (max-width: 400px) {
+    * {
+      font-size: 12px;
+    }
+  }
+  
+  // Tablet
+  @media (min-width: 401px) and (max-width: 768px) {
+    * {
+      font-size: 14px;
+    }
+  }
+  
+  // Small laptop
+  @media (min-width: 769px) and (max-width: 992px) {
+    * {
+      font-size: 16px;
+    }
+  }
+  
+  // Large laptop and desktop
+  @media (min-width: 993px) and (max-width: 1200px) {
+    * {
+      font-size: 18px;
+    }
+  }
+  
+  // Extra large screens
+  @media (min-width: 1201px) {
+    * {
+      font-size: 20px;
+    }
+  }
+  
+  // Media query specifica
+  @media (min-width: 990px) {
+    .video-wrapper video {
+      height: 80%;
+    }
+  }
+  

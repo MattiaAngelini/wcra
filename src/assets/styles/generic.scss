@@ -1,3 +1,4 @@
+// GOOGLE FONT
 * { 
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
@@ -5,3 +6,36 @@
     font-style: normal;
 
 }
+
+// DIVISORE PAGINE TITOLO E CINTURA
+  .title-section {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .container-belts {
+    display: flex;
+    width: 60%;
+    margin: auto;
+  }
+
+  .belt1 {
+    width: 60%;
+    margin: auto;
+    height: 8px;
+    background-color: black;
+  }
+  
+  .belt2 {
+    width: 20%;
+    margin: auto;
+    height: 8px;
+    background-color: red;
+  }
+  
+  .belt3 {
+    width: 20%;
+    margin: auto;
+    height: 8px;
+    background-color: black;
+  }
