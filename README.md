@@ -5,7 +5,7 @@
 Questo progetto è un sito web sviluppato utilizzando Vue.js, concepito per fornire informazioni dettagliate
 sul team di Brazilian Jiu-Jitsu W.C.R.A. Il sito comprende diverse sezioni, tra cui informazioni sul team,
 orari dei corsi, una sezione dedicata agli istruttori, una mappa interattiva che utilizza API per mostrare
-la posizione della palestra, animazioni per ogni sezione e una galleria di immagini con slider interattivo.
+le posizioni delle palestre in cui è presente il team, animazioni per ogni sezione e una galleria di immagini con slider interattivo.
 Il sito è completamente responsive per garantire un'esperienza utente ottimale su tutti i dispositivi.
 
 ## Funzionalità Principali
@@ -21,9 +21,11 @@ Il sito è completamente responsive per garantire un'esperienza utente ottimale 
 
 - **Vue.js**
 - **Vue Router**
-- **Leaflet**
-- **Bootstrap**
-- **Sass**
 - **Vite**
 - **JavaScript**
+- **Bootstrap**
+- **Sass**
+- **Leaflet**
+
+
 
