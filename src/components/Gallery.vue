@@ -8,63 +8,40 @@ export default {
         {
           image1: '../src/assets/images/cover-orari.jpg',
           image2: '../src/assets/images/mica.jpg',
-          image3: '../src/assets/images/cover-orari.jpg'
+          image3: '../src/assets/images/cover-orari.jpg',
+          id: '1'
         },
         {
           image1: '../src/assets/images/mica.jpg',
           image2: '../src/assets/images/cover-orari.jpg',
-          image3: '../src/assets/images/mica.jpg'
+          image3: '../src/assets/images/mica.jpg',
+          id:2
         },
         {
           image1: '../src/assets/images/cover-orari.jpg',
           image2: '../src/assets/images/mica.jpg',
-          image3: '../src/assets/images/cover-orari.jpg'
+          image3: '../src/assets/images/cover-orari.jpg',
+          id:3
         },
         {
           image1: '../src/assets/images/mica.jpg',
           image2: '../src/assets/images/cover-orari.jpg',
-          image3: '../src/assets/images/mica.jpg'
+          image3: '../src/assets/images/mica.jpg',
+          id: 4
         },
         {
           image1: '../src/assets/images/cover-orari.jpg',
           image2: '../src/assets/images/mica.jpg',
-          image3: '../src/assets/images/cover-orari.jpg'
+          image3: '../src/assets/images/cover-orari.jpg',
+          id:5
         },
         {
           image1: '../src/assets/images/mica.jpg',
           image2: '../src/assets/images/cover-orari.jpg',
-          image3: '../src/assets/images/mica.jpg'
+          image3: '../src/assets/images/mica.jpg',
+          id:6
         },
-        {
-          image1: '../src/assets/images/cover-orari.jpg',
-          image2: '../src/assets/images/mica.jpg',
-          image3: '../src/assets/images/cover-orari.jpg'
-        },
-        {
-          image1: '../src/assets/images/mica.jpg',
-          image2: '../src/assets/images/cover-orari.jpg',
-          image3: '../src/assets/images/mica.jpg'
-        },
-        {
-          image1: '../src/assets/images/cover-orari.jpg',
-          image2: '../src/assets/images/mica.jpg',
-          image3: '../src/assets/images/cover-orari.jpg'
-        },
-        {
-          image1: '../src/assets/images/mica.jpg',
-          image2: '../src/assets/images/cover-orari.jpg',
-          image3: '../src/assets/images/mica.jpg'
-        },
-        {
-          image1: '../src/assets/images/cover-orari.jpg',
-          image2: '../src/assets/images/mica.jpg',
-          image3: '../src/assets/images/cover-orari.jpg'
-        },
-        {
-          image1: '../src/assets/images/mica.jpg',
-          image2: '../src/assets/images/cover-orari.jpg',
-          image3: '../src/assets/images/mica.jpg'
-        },
+        
       ],
       activeCarousel: 0,
       animate: false,
@@ -93,14 +70,16 @@ export default {
         }
         this.animate = true;
       }, 20);
-    }
+    },
+   
   },
+
 };
 </script>
 
 <template>
-  <section class="mt-5 pb-5 mb-5">
-    <div class="d-flex justify-content-center">
+  <section class="pb-5">
+    <div class="d-flex justify-content-center mb-4 mt-4">
       <div>
         <span class="title-section">GALLERY</span>
         <div class="d-flex">
@@ -120,12 +99,21 @@ export default {
           <i @click="prevCarousel()" class="fa-solid fa-caret-left p-3"></i>
         </div>
 
-        <div class="d-md-flex">
-          <div><img class="mt-4" :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt=""></div>
-          <div><img class="mt-4" :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt=""></div>
-          <div><img class="mt-4" :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt=""></div>
+        <div>
+          <div class="d-md-flex">
+            <div><img :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt=""></div>
+            <div><img :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt=""></div>
+            <div><img :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt=""></div>
+          </div>
+           
+          <div class="mt-3 d-flex justify-content-center circle-container gap-3">
+              <div class="ms-pagination mt-3" v-for="(item, index) in carousel" :class="{'circle': true, 'active': index === activeCarousel}">
+                {{ item.id }}
+              </div>
+          </div>
+       
         </div>
-
+     
         <div class="d-flex align-items-center">
           <i @click="nextCarousel()" class="fa-solid fa-caret-right p-3"></i>
         </div>
@@ -138,11 +126,25 @@ export default {
 @use './src/assets/styles/partials/variables.scss' as *;
 @use './src/assets/styles/partials/animations.scss' as *;
 
+.ms-pagination{
+  font-weight: 600;
+  padding: 10px;
+}
 
+.active {
+ background-color: rgb(132, 20, 20);
+ border: 2px solid black;
+ color: white;
+ padding: 10px;
+ 
+ font-weight: 700;
+
+}
 
 section {
   background-color: $secondary-color;
-  border: 14px solid black;
+  border: 8px solid black;
+  height: 100%;
 }
 
 .ms-container {
@@ -154,7 +156,7 @@ section {
   }
 
   i {
-    
+    font-size: 30px;
     cursor: pointer;
   }
 }

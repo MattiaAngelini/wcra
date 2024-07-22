@@ -18,7 +18,7 @@ export default {
         </div>
       </div>
     </div>
-    <section class="istruttori container d-flex justify-content-center flex-wrap gap-5 mt-5 mb-5">
+    <section class="istruttori container d-flex justify-content-center flex-wrap gap-2 mt-5 mb-5">
       <div class="ms-card">
         <img src="../assets/images/mica.jpg" alt="">
         <div class="p-3">
@@ -83,7 +83,9 @@ export default {
 @use './src/assets/styles/partials/variables.scss' as *;
 
 .ms-container{
-  background-color: $secondary-color;
+ 
+
+  background-color:  $secondary-color;
   padding: 40px 0 40px 0;
 }
 
@@ -100,7 +102,7 @@ export default {
     color: white;
     font-size: 20px;
     width: 100%;
-    max-width: 300px;
+    max-width: 425px;
   
     img {
       width: 100%;

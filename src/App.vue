@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss">
 @use './src/assets/styles/generic.scss' as *;
+@use './src/assets/styles/partials/animations.scss' as *;
 
 
 .header {

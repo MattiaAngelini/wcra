@@ -1,4 +1,4 @@
-// ANIMATION SLIDER
+// ANIMATION CLASSIC
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -20,4 +20,31 @@
       animation-delay: #{$i * 0.1}s;
     }
   }
+
+  
+// // ANIMATION SINISTRA A DESTRA
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  opacity: 0;
+  animation: slideInRight 1.5s ease-out forwards;
+}
+
+@for $i from 0 through 20 {
+  .slide-delay-#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
+}
+
+
+
   

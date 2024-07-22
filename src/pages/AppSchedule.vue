@@ -7,7 +7,7 @@ export default {
 <template>
   <section class="wrap p-5">
     <div class="container">
-      <div class="row">
+      <div class="row mt-5">
 
 
         <!-- Descrizione corsi -->
