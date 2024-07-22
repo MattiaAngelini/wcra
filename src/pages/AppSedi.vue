@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex justify-content-center mt-5">
+  <div class="d-flex justify-content-center mt-3">
     <div>
       <span class="title-section">DOVE TROVARCI</span>
       <div class="d-flex">
@@ -23,32 +23,41 @@ export default {
     </div>
   </div>
 
-  <section class="d-flex align-items-center mt-5 mb-5">
+  <section class="d-flex align-items-center mt-2 mb-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-5 p-3">
           <h1>Trova la sede più vicina a te</h1>
-          <p>Il team WCRA è molto attivo in Puglia con diverse sedi ecc. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Asperiores non consequatur sint! Sapiente veritatis officia ducimus, a
+          <p>Il team W.C.R.A. è molto attivo in Puglia e nel sud Italia e le nostre sedi collaborano strettamente come un unica grande squadra. 
+             Scopri la sede più vicina a te:</p>
             <div>
-              <b>BARI</b> - Sede Centrale - Angiulli Fitness Gym, Via Domenico Cotugno 10.
+              <b>BARI</b> - Sede Centrale - Angiulli Fitness Gym, Via Domenico Cotugno, 10
             </div>
             <div>
-              <b>BARI</b> - Sede Centrale - Angiulli Fitness Gym, Via Domenico Cotugno 10.
+              <b>BRINDISI</b> - Via Lucio Strabone, 42 - Invictus Fight Lab
             </div>
             <div>
-              <b>BARI</b> - Sede Centrale - Angiulli Fitness Gym, Via Domenico Cotugno 10.
+              <b>LECCE</b> - Via Luciano Spagna, 92, Galatone - Kali and Fitness Academy
             </div>
             <div>
-              <b>BARI</b> - Sede Centrale - Angiulli Fitness Gym, Via Domenico Cotugno 10.
+              <b>TARANTO</b> - Viale Europa, 204,Talsano - Centro sportivo Bellevue
             </div>
             <div>
-              <b>BARI</b> - Sede Centrale - Angiulli Fitness Gym, Via Domenico Cotugno 10.
+              <b>FASANO</b> - Via dell'Agricoltura, 109 - Sport Project
             </div>
-          </p>
+            <div>
+              <b>LATIANO</b> - Contrada Romatizza, Zona P.i.p. - Revolution Club Latiano
+            </div>
+            <div>
+              <b>SCANZANO</b> - Via Kennedy, Scanzano Jonico, MT 22 - Asd Dojo Fit Club
+            </div>
+            <div>
+              <b>SANTERAMO IN COLLE</b> -  Via Abruzzo - Molise, 32 - Fighting Team Lassandro
+            </div>
+          
         </div>
 
-        <div class="container-map col-12 offset-md-1 col-md-7">
+        <div class="container-map col-12 col-md-7 p-3">
           <GoogleMap class="ms-map" />
         </div>
       </div>
