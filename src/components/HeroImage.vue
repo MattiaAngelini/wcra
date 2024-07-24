@@ -9,7 +9,7 @@ export default {
   <section>
     <div class="ms-container">
       <video class="hero-video" autoplay muted loop>
-        <source src="../assets/images/lezione.mp4" type="video/mp4">
+        <source src="../assets/images/lezione-2.mp4" type="video/mp4">
         Il tuo browser non supporta il tag video.
       </video>
       <div class="ms-wrap"></div>

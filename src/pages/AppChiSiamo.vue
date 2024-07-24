@@ -20,9 +20,10 @@ export default {
   </div>
 
   <div class="container mb-5 d-lg-flex gap-4">         
-    <div class="description text-center mt-5 p-3"> 
-      <h3>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h3>  
-      <div>COMPETIZIONI, UIJJ, IBJJF ECC E FOTO COMPETIZIONI praesentium sunt nihil fugit maxime adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime adipisiium iusto necessitatibus officia adipisci. Iste praesentium sunt nihil fugit maxime voluptatum rerum.</div>         
+    <div class="description text-center mt-4 p-3"> 
+      <h1>Dal 2005 faro del Brazilian Jiu-Jitsu in Puglia e nel sud Italia</h1>  
+      <div> "Il team WCRA è uno dei più competitivi in Italia, attivo nelle principali competizioni e costantemente classificati tra i primi dieci team dell'Unione Italiana Jiu Jitsu (UIJJ),
+           ci distinguiamo per il nostro impegno e i risultati ottenuti a livello nazionale e internazionale.</div>         
       <img class="img-fluid" src="../assets/images/lotta.png" alt="">
     </div>
     
@@ -40,7 +41,19 @@ export default {
 @use './src/assets/styles/partials/mediaqueries.scss' as *;
 @use './src/assets/styles/generic.scss' as *;
 
+.description {
 
+  h1{
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  * {
+    font-weight: 600;
+    line-height: 30px;
+  }
+ 
+}
 .video-wrapper {
   position: relative;
   width: 100%;

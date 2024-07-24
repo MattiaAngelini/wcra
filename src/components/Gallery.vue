@@ -73,7 +73,6 @@ export default {
     },
    
   },
-
 };
 </script>
 
@@ -94,29 +93,31 @@ export default {
 
     <div class="ms-container fade-in delay">
       <!-- Carosello immagini -->
-      <div class="p-1 d-flex justify-content-center">
-        <div class="d-flex align-items-center">
-          <i @click="prevCarousel()" class="fa-solid fa-caret-left p-3"></i>
-        </div>
-
+      <div class="d-flex justify-content-center">
+        
         <div>
           <div class="d-md-flex">
-            <div><img :class="{'fade-in': animate, 'delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt=""></div>
-            <div><img :class="{'fade-in': animate, 'delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt=""></div>
-            <div><img :class="{'fade-in': animate, 'delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt=""></div>
+            <div><img :class="{'slide-in-right': animate, 'slide-delay-1': animate}" :srcset="carousel[activeCarousel].image1" alt=""></div>
+            <div><img :class="{'slide-in-right': animate, 'slide-delay-2': animate}" :srcset="carousel[activeCarousel].image2" alt=""></div>
+            <div><img :class="{'slide-in-right': animate, 'slide-delay-3': animate}" :srcset="carousel[activeCarousel].image3" alt=""></div>
           </div>
            
-          <div class="mt-3 d-flex justify-content-center circle-container gap-3">
-              <div class="ms-pagination mt-3" v-for="(item, index) in carousel" :class="{'circle': true, 'active': index === activeCarousel}">
-                {{ item.id }}
+          <div class="d-flex justify-content-center align-items-center mt-4 gap-3">
+              <div class="d-flex">
+                <i @click="prevCarousel()" class="fa-solid fa-caret-left"></i>
+             </div>
+
+                <div class="ms-pagination" v-for="(item, index) in carousel" :class="{'circle': true, 'active': index === activeCarousel}">
+                    <div>{{ item.id }}</div>
+                </div>
+
+                <div class="d-flex">
+                <i @click="nextCarousel()" class="fa-solid fa-caret-right"></i>
               </div>
+          
           </div>
-       
         </div>
-     
-        <div class="d-flex align-items-center">
-          <i @click="nextCarousel()" class="fa-solid fa-caret-right p-3"></i>
-        </div>
+    
       </div>
     </div>
   </section>
@@ -126,38 +127,90 @@ export default {
 @use './src/assets/styles/partials/variables.scss' as *;
 @use './src/assets/styles/partials/animations.scss' as *;
 
+
 .ms-pagination{
   font-weight: 600;
-  padding: 10px;
+  
 }
 
 .active {
  background-color: rgb(132, 20, 20);
- border: 2px solid black;
  color: white;
- padding: 10px;
- 
+ padding: 0px 6px 0 6px;
  font-weight: 700;
-
 }
 
 section {
   background-color: $secondary-color;
-  border: 8px solid black;
+  border: 4px solid black;
   height: 100%;
 }
 
 .ms-container {
   img {
-    
-    box-shadow: 3px 6px 7px rgba(0, 0, 0, 1);
     width: 100%;
-    max-width: 550px;
+    height: 500px;
+    max-width: 100%;
   }
 
   i {
     font-size: 30px;
     cursor: pointer;
+  }
+}
+
+
+// Very small devices (e.g., smartphones with screens smaller than 340px)
+@media (max-width: 320px) {
+  .ms-container {
+    img {
+      height: 180px;
+    }
+  }
+}
+
+// Smartphone
+@media (min-width: 321px) and (max-width: 400px) {
+  .ms-container {
+    img {
+      height: 200px;
+    }
+  }
+}
+
+// Small tablets and large smartphones (portrait mode)
+@media (min-width: 401px) and (max-width: 600px) {
+  .ms-container {
+    img {
+      height: 300px;
+    }
+  }
+}
+
+// Tablets (portrait mode)
+@media (min-width: 601px) and (max-width: 768px) {
+  .ms-container {
+    img {
+      height: 350px;
+    }
+  }
+}
+
+// Small laptops and tablets (landscape mode)
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ms-container {
+    img {
+      height: 450px;
+    }
+  }
+}
+
+// Large laptops and desktops
+@media (min-width: 1025px) {
+  .ms-container {
+    img {
+      height: 500px;
+    }
   }
 }
 

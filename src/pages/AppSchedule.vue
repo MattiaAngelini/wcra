@@ -7,7 +7,7 @@ export default {
 <template>
   <section class="wrap p-5">
     <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-1">
 
 
         <!-- Descrizione corsi -->
@@ -25,7 +25,8 @@ export default {
               </div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad facilis quis illo error assumenda earum cumque asperiores debitis vel quas, odio soluta explicabo iste, ipsam in iusto officiis labore.</p>
+          <p>Con 20 classi alla settimana, i nostri corsi sono suddivisi per cercare di soddisfare ogni esigenza dei praticanti, 
+            le nostre classi sono divise in corsi per bambini, principianti, femminile e agonisti.</p>
         </div>
 
         <!-- Sched orari -->
@@ -39,6 +40,7 @@ export default {
                     <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
                     <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
                     <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                    <div>11:00 - 12:00 <span class="kids">Kids</span></div>
                   </div>
 
                   <div class="day-week">
@@ -46,6 +48,7 @@ export default {
                     <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
                     <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
                     <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                    <div>11:00 - 12:00 <span class="kids">Kids</span></div>
                   </div>
 
                   <div class="day-week">
@@ -53,6 +56,7 @@ export default {
                     <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
                     <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
                     <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                    <div>11:00 - 12:00 <span class="kids">Kids</span></div>
                   </div>
               </div>
             
@@ -63,6 +67,7 @@ export default {
                     <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
                     <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
                     <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                    <div>11:00 - 12:00 <span class="kids">Kids</span></div>
                   </div>
 
                   <div class="day-week">
@@ -70,6 +75,7 @@ export default {
                     <div>11:00 - 12:00 <span class="intermedio">Intermedio</span></div>
                     <div>11:00 - 12:00 <span class="femminile">Only Women</span></div>
                     <div>11:00 - 12:00 <span class="basic">Basic</span></div>
+                    <div>11:00 - 12:00 <span class="kids">Kids</span></div>
                   </div>
 
                   <div class="day-week">
@@ -80,7 +86,7 @@ export default {
               
               <div class="weekend mt-3 mb-5">
                 <b><h3>DOMENICA</h3></b>
-                <div><b>CHIUSO</b></div>
+                <h3><b>CHIUSO</b></h3>
               </div>
           
          </div>       
@@ -102,7 +108,9 @@ export default {
 
 p {
   color: white;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
 }
 h3 {
   font-weight: 700;
@@ -154,6 +162,10 @@ h3 {
 
   .femminile {
     background-color: rgb(79, 30, 79);
+  }
+
+  .kids {
+    background-color: rgb(212, 206, 29);
   }
 }
 

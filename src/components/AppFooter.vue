@@ -13,11 +13,15 @@ export default {
           <img class="rounded-circle mt-3" src="../assets/images/wcra-logo.png" alt="">
         </div>
         
-        <div class="col-12 col-md-3 offset-md-1 d-flex flex-column gap-1 mt-4">
+        <div class="col-12 col-md-3 offset-md-1 d-flex flex-column gap-2 mt-4">
           <h3>CONTATTI</h3>
-          <div>Numero:345345345</div>
-          <div>e-mail: asddaoasdjapo@gmail.com</div>
-          <div>SociaL x x x x</div>
+          <div>Numero: 345345345</div>
+          <div>e-mail: asdwcra@gmail.com</div>
+          <div class="d-flex gap-2">  
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
           <div>Indirizzo: Via Domenico Cotugno,70124 Bari.</div>
         </div>
 
